@@ -26,4 +26,8 @@ def decrypt_file(input_file, output_file, key):
 if __name__ == "__main__":
     key = get_random_bytes(16)  # 128-bit key
     encrypt_file("../test_files/sample.txt", "../test_files/encrypted.bin", key)
-    decrypt_file("../test_files/encrypted.bin", "../test_files/decrypted.txt", key)
+    try:
+        decrypt_file("../test_files/encrypted.bin", "../test_files/decrypted.txt", key)
+    except Exception as e:
+        print("[!] Decryption error:", e)
+
