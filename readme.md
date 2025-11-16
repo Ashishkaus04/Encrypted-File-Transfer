@@ -113,7 +113,6 @@ web3==6.11.4
 requests==2.31.0
 pycryptodome==3.20.0
 pathlib==1.0.1
-pandas==2.1.4
 ```
 
 Install using:
