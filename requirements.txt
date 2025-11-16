@@ -6,7 +6,7 @@ flask==3.0.3
 requests==2.32.3
 
 # === Blockchain Integration (Phase 4–5) ===
-#web3==6.15.1
+web3==6.15.1
 
 # === Database (Optional, for user authentication) ===
 sqlalchemy==2.0.36
@@ -18,3 +18,6 @@ tqdm==4.66.5      # for progress bars
 # === Testing and Linting (Optional) ===
 pytest==8.3.3
 flake8==7.1.1
+
+# === UI ===
+streamlit

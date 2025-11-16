@@ -1,6 +1,18 @@
+import hashlib
+from web3 import Web3
+import json
 from Crypto.Cipher import AES
 from Crypto.Random import get_random_bytes
 from Crypto.Util.Padding import pad, unpad
+import os
+
+def compute_hash(file_path):
+    hasher = hashlib.sha256()
+    with open(file_path, 'rb') as f:
+        while chunk := f.read(4096):
+            hasher.update(chunk)
+    return hasher.hexdigest()
+
 
 # AES key length can be 16, 24, or 32 bytes
 def encrypt_file(input_file, output_file, key):
@@ -30,4 +42,5 @@ if __name__ == "__main__":
         decrypt_file("../test_files/encrypted.bin", "../test_files/decrypted.txt", key)
     except Exception as e:
         print("[!] Decryption error:", e)
+    
 
