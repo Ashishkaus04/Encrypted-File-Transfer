@@ -1,23 +1,29 @@
-# === Core Cryptography ===
-pycryptodome==3.21.0
+# ===============================
+# Core Web App + UI
+# ===============================
+streamlit==1.32.0
 
-# === Networking and API (for later phases) ===
-flask==3.0.3
-requests==2.32.3
+# ===============================
+# Blockchain (Ganache / Ethereum)
+# ===============================
+web3==6.11.4
 
-# === Blockchain Integration (Phase 4–5) ===
-web3==6.15.1
+# ===============================
+# IPFS Upload (Pinata API)
+# ===============================
+requests==2.31.0
 
-# === Database (Optional, for user authentication) ===
-sqlalchemy==2.0.36
+# ===============================
+# Cryptography (AES + RSA)
+# ===============================
+pycryptodome==3.20.0
 
-# === Utility Tools ===
-colorama==0.4.6   # for colorful terminal logs
-tqdm==4.66.5      # for progress bars
+# ===============================
+# File handling / Helpers
+# ===============================
+pathlib==1.0.1
 
-# === Testing and Linting (Optional) ===
-pytest==8.3.3
-flake8==7.1.1
-
-# === UI ===
-streamlit
+# ===============================
+# Optional: For pretty tables, if needed
+# ===============================
+pandas==2.1.4
