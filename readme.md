@@ -254,5 +254,4 @@ Developed using:
 - IPFS  
 - AES/RSA cryptography  
 
-If you'd like, I can **generate a project banner image**, **GIF demo**, or **badges** for your GitHub page!
 
